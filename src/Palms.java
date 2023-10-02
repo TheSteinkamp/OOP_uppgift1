@@ -1,22 +1,10 @@
 public class Palms extends Plants {
-    private String fluid = "Kranvatten";
+    // Palms och de andra växtklasserna ärver Plants, dvs de variablerna (och ev metoder) som finns i Plants kommer även kunna
+    // användas och hämtas från dessa klasser
 
     public Palms(String name, double height) {
         super(name, height);
     }
-
-    public String getFluid() {
-        return fluid;
-    }
-
-    public void setFluid(String fluid) {
-        this.fluid = fluid;
-    }
-/*    @Override
-    public double howMuchFeed() {
-        getAmountOfFluid() = 0.5 * getHeight();
-        return amountOfFluid;
-    }*/
 
    @Override
     public double howMuchFeed() {
@@ -25,6 +13,11 @@ public class Palms extends Plants {
 
     @Override
     public String printOut() {
-        return getName() + " ska ha " + howMuchFeed() + " liter " + getFluid();
+        return getName() + " ska ha " + howMuchFeed() + " liter " + wichFluid();
+    }
+
+    @Override
+    public String wichFluid() {
+        return Fluids.KRANVATTEN.getFluids();
     }
 }

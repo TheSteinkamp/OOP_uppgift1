@@ -1,18 +1,9 @@
 abstract public class Plants  implements Feed{
+    // plants är en abstrakt superklass, dvs man ska inte skapa objekt av den utan objekten ska tillhöra någon av subklasserna.
+    // Plants implementerar interfacet Feed, vilket gör att alla subklasser också implementerar de metoderna.
+    // Vi använder oss av inkapsling för att inte andra klasser ska komma åt variablerna, istället kommer dom åt variablerna genom getters och setters
     private String name;
-    //private String fluid;
     private double height;
-   // private double amountOfFluid;
-
-/*
-    public String getFluid() {
-        return fluid;
-    }
-
-    public void setFluid(String fluid) {
-        this.fluid = fluid;
-    }
-*/
 
     public String getName() {
         return name;
@@ -29,30 +20,10 @@ abstract public class Plants  implements Feed{
     public void setHeight(double height) {
         this.height = height;
     }
-/*
-    public double getAmountOfFluid() {
-        return amountOfFluid;
-    }
 
-    public double setAmountOfFluid(double amountOfFluid) {
-        this.amountOfFluid = amountOfFluid;
-        return amountOfFluid;
-    }*/
-
-    public Plants(String name, double height) {
+    public Plants(String name, double height) { // konstruktor som används när vi skapar upp objekten och skickar in namn och höjd som inparametrar
         this.name = name;
         this.height = height;
     }
-
-/*    @Override
-    public double howMuchFeed() {
-        return 0;
-    }*/
-
-/*    @Override
-    public String printOut() {
-        return getName() + " ska ha " + getAmountOfFluid() + " liter " + getFluid();
-    }*/
-
 
 }

@@ -10,23 +10,26 @@ public class Main {
 
     ArrayList<Plants> plantList = new ArrayList<>();
 
+    // här skapar vi upp alla variabler samt listan som vi ska använda
+
     public Main() {
 
         plantList.add(Igge);
         plantList.add(Meatloaf);
         plantList.add(Laura);
-        plantList.add(Olof);
+        plantList.add(Olof); // adderar de olika objekten till listan
+
 
         while (true) { // en loop som fortsätter fråga så länge man inte trycker på avbryt eller cancel
             String name = JOptionPane.showInputDialog("Vilken planta vill du vattna?");
-            if (name == null)
+            if (name == null) // om man avbryter så avbryts programmet
                 break;
             else
-                searchList(plantList, name);
+                searchList(plantList, name); // annars söker vi efter namnet vi skrev in genom metoden searchList
         }
     }
 
-    public void searchList(ArrayList<Plants> list, String name) {
+    public void searchList(ArrayList<Plants> list, String name) { // metod som i inparametrar tar in listan vi gjorde med växterna samt ordet vi söker efter
         boolean found = false;
         for (Plants p : list) {
             if (p.getName().equalsIgnoreCase(name)) {
