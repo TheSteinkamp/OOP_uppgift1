@@ -1,4 +1,4 @@
-abstract public class Plants  implements Feed{
+abstract public class Plants implements Feed {
     // plants är en abstrakt superklass, dvs man ska inte skapa objekt av den utan objekten ska tillhöra någon av subklasserna.
     // Plants implementerar interfacet Feed, vilket gör att alla subklasser också implementerar de metoderna.
     // Vi använder oss av inkapsling för att inte andra klasser ska komma åt variablerna, istället kommer dom åt variablerna genom getters och setters

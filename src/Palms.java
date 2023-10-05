@@ -6,7 +6,7 @@ public class Palms extends Plants {
         super(name, height);
     }
 
-   @Override
+    @Override // polymorfism, dessa metoder nedan som kommer från interfacet ger olika resultat beroende på vilken klass som anropar dom
     public double howMuchFeed() {
         return 0.5 * getHeight();
     }

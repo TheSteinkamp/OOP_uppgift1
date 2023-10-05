@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Main {
     Cactus Igge = new Cactus("Igge", 0.2);

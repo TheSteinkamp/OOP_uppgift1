@@ -1,4 +1,4 @@
-public class CarnivorousPlant extends Plants{
+public class CarnivorousPlant extends Plants {
 
     public CarnivorousPlant(String name, double height) {
         super(name, height);
@@ -6,8 +6,9 @@ public class CarnivorousPlant extends Plants{
 
     @Override
     public double howMuchFeed() {
-        return 0.1 + (0.2*getHeight());
+        return 0.1 + (0.2 * getHeight());
     }
+
     @Override
     public String printOut() {
 
