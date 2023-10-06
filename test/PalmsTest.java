@@ -10,5 +10,6 @@ class PalmsTest {
     void howMuchFeed() {
         assert(Laura.howMuchFeed() == 2.5);
         assert(Laura.howMuchFeed() != 1);
+        assert(Laura.howMuchFeed() == 1);
     }
 }
