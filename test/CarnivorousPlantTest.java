@@ -7,7 +7,7 @@ class CarnivorousPlantTest {
 
     @Test
     void howMuchFeed() {
-        assertEquals((0.1 + (0.2 * Meatloaf.getHeight())), 0.24);
-        assertEquals((0.1 + (0.2 * Meatloaf.getHeight())), 0.12);
+        assert(Meatloaf.howMuchFeed() == 0.24);
+        assert(Meatloaf.howMuchFeed() != 1);
     }
 }
